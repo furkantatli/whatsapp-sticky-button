@@ -28,7 +28,4 @@ RUN ls -la build/ && ls -la build/server/
 ENV NODE_ENV=production
 ENV HOST=0.0.0.0
 
-# Prune dev dependencies after build
-RUN npm prune --production
-
 CMD ["npm", "run", "docker-start"]
