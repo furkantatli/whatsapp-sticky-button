@@ -27,5 +27,6 @@ RUN ls -la build/ && ls -la build/server/
 # Set environment variables
 ENV NODE_ENV=production
 ENV HOST=0.0.0.0
+ENV PORT=3000
 
 CMD ["npm", "run", "docker-start"]
