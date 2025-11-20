@@ -2,8 +2,6 @@ FROM node:18-alpine
 
 RUN apk add --no-cache openssl
 
-EXPOSE 3000
-
 WORKDIR /app
 
 # Copy package files first
@@ -27,6 +25,5 @@ RUN ls -la build/ && ls -la build/server/
 # Set environment variables
 ENV NODE_ENV=production
 ENV HOST=0.0.0.0
-ENV PORT=3000
 
 CMD ["npm", "run", "docker-start"]
