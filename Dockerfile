@@ -21,6 +21,9 @@ RUN npx prisma generate
 # Build the application
 RUN npm run build
 
+# Debug: List build directory contents
+RUN ls -la build/ && ls -la build/server/
+
 # Set environment variables
 ENV NODE_ENV=production
 ENV HOST=0.0.0.0
