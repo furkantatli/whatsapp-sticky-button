@@ -2,7 +2,7 @@
 
 client_id = "8d370fa88e5f8076c696cbd8df047b98"
 name = "Whatsapp-sticky-button"
-application_url = "https://example.com"
+application_url = "https://whatsapp-sticky-button-production.up.railway.app"
 embedded = true
 
 [build]
@@ -25,4 +25,8 @@ api_version = "2026-01"
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [
+  "https://whatsapp-sticky-button-production.up.railway.app/auth/callback",
+  "https://whatsapp-sticky-button-production.up.railway.app/auth/shopify/callback",
+  "https://whatsapp-sticky-button-production.up.railway.app/api/auth/callback"
+]
